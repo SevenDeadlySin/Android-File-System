@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raksa.externalstorage.MainActivity">
+
+    <EditText
+        android:id="@+id/editTextExternalPrivateData"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:layout_width="0dp"
+        style="@style/EditTextDataInput.ExternalPrivate"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSaveExternalPrivate"
+        style="@style/Button"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Save As External Private File"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExternalPrivateData" />
+
+    <Button
+        android:id="@+id/buttonReadExternalPrivate"
+        style="@style/Button"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Read The FIle (Private)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSaveExternalPrivate" />
+
+    <TextView
+        android:id="@+id/textViewExternalPrivateReadData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Read Data :"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReadExternalPrivate"
+        app:layout_constraintStart_toStartOf="@+id/buttonReadExternalPrivate"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReadExternalPrivate" />
+
+    <EditText
+        android:id="@+id/editTextExternalPublicData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Data For External Public File"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExternalPrivateReadData" />
+
+    <Button
+        android:id="@+id/buttonSaveExternalPublic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Save as exernal public file"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExternalPublicData" />
+
+    <Button
+        android:id="@+id/buttonReadExternalPublic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="READ THE FILE (public)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSaveExternalPublic" />
+
+    <TextView
+        android:id="@+id/textViewExternalPubliReadData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Read Data :"
+        app:layout_constraintEnd_toEndOf="@+id/buttonReadExternalPublic"
+        app:layout_constraintStart_toStartOf="@+id/buttonReadExternalPublic"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReadExternalPublic" />
+</android.support.constraint.ConstraintLayout>
